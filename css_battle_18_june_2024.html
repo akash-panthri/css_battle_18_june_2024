@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div><span></span>
+<style>
+    * {
+        background: #BE3184;
+        position: relative;
+    }
+
+    div::before,
+    div::after {
+        position: absolute;
+        content: "";
+        left: -30px;
+        top: -30px;
+        width: 100px;
+        height: 200px;
+        background: #611B3F;
+        z-index: 0;
+    }
+
+    div::after {
+        left: 70px;
+        top: -130px;
+    }
+
+    div,
+    span {
+        position: absolute;
+        left: 122px;
+        top: 122px;
+        width: 139px;
+        height: 39px;
+        background: #BE3184;
+        z-index: 1;
+    }
+    </style>
+</body>
+</html>
